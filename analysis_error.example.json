@@ -1,0 +1,11 @@
+{
+  "schema_version": "1.0",
+  "status": "error",
+  "file_name": "sample.csv",
+  "summary": null,
+  "columns": [],
+  "error": {
+    "code": "FILE_NOT_FOUND",
+    "message": "CSV file could not be found."
+  }
+}
