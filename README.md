@@ -1,4 +1,5 @@
 # CSVI
+<center><img src="https://cdn.discordapp.com/attachments/1459155044086841651/1568523939515469884/698325208-77ac07bd-fd2b-404c-96f9-d51267aa390c.png?ex=6af02140&is=6aeecfc0&hm=39a98df6f57bab2cc44150722378d3259bad452cb1fad16a74bef9ab7929db82&" width="400" height="300"></center>
 
 **CSV vIsualizer**
 **A lightweight CSV data profiling and quality analysis tool.**
