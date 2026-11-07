@@ -1,0 +1,35 @@
+{
+  "schema_version": "1.0",
+  "status": "success",
+  "file_name": "sample.csv",
+  "summary": {
+    "row_count": 100,
+    "column_count": 2,
+    "duplicate_row_count": 5,
+    "duplicate_row_ratio": 0.05
+  },
+  "columns": [
+    {
+      "index": 0,
+      "name": "age",
+      "data_type": "integer",
+      "missing_count": 10,
+      "missing_ratio": 0.1,
+      "statistics": {
+        "count": 90,
+        "mean": 25.5,
+        "min": 18,
+        "max": 60
+      }
+    },
+    {
+      "index": 1,
+      "name": "name",
+      "data_type": "string",
+      "missing_count": 5,
+      "missing_ratio": 0.05,
+      "statistics": null
+    }
+  ],
+  "error": null
+}
