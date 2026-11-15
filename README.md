@@ -1,5 +1,5 @@
 # CSVI
-<center><img src="https://cdn.discordapp.com/attachments/1459155044086841651/1568523939515469884/698325208-77ac07bd-fd2b-404c-96f9-d51267aa390c.png?ex=6af02140&is=6aeecfc0&hm=39a98df6f57bab2cc44150722378d3259bad452cb1fad16a74bef9ab7929db82&" width="400" height="300"></center>
+<center><img src="https://github.com/Leben4164/CSVI/blob/main/web/csvi/assets/logo.png?raw=true" width="400" height="300"></center>
 
 **CSV vIsualizer**
 **A lightweight CSV data profiling and quality analysis tool.**
@@ -51,10 +51,10 @@ CSVI는 단순한 CSV 뷰어가 아닌, 데이터 분석 전 단계에서 활용
 
 ## 4. Project Architecture
 
-CSV Scout는 웹 애플리케이션과 데이터 분석 엔진을 분리한 구조로 설계되었습니다.
+CSVI는 웹 애플리케이션과 데이터 분석 엔진을 분리한 구조로 설계되었습니다.
 
 ```text
-CSV Scout
+CSVI
 │
 ├── web/
 │   └── Next.js Application
@@ -116,7 +116,7 @@ CSV Scout
 
 > 현재 개발 및 배포 방식은 구현 단계에서 구체화할 예정입니다.
 
-기본적으로 CSV Scout는 사용자의 로컬 환경에서 실행하는 것을 목표로 합니다.
+기본적으로 CSVI는 사용자의 로컬 환경에서 실행하는 것을 목표로 합니다.
 
 예상 실행 흐름:
 
@@ -125,10 +125,10 @@ CSV Scout
 git clone <repository-url>
 
 # Move to project directory
-cd csv-scout
+cd csvi
 
 # Install web dependencies
-cd web
+cd web/csvi
 npm install
 
 # Start development server
