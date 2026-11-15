@@ -28,7 +28,7 @@ export async function POST(request: Request) {
     await writeFile(filePath, buffer)
 
     const { stdout } = await execFileAsync(
-      "엔진경로",
+      "../../engine/csvi.out",
       [filePath],
       {
         timeout: 30000,

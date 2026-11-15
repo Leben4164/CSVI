@@ -12,6 +12,7 @@ export default function Home() {
         <Image
           src={logoImage}
           alt="logo image"
+          loading="eager"
           width={400}
           height={300}
         />

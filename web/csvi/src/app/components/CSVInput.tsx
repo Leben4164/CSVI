@@ -1,14 +1,15 @@
 "use client"
 
-import { useState } from "react"
 import { InboxOutlined } from '@ant-design/icons';
 import type { UploadProps } from 'antd';
 import { message, Upload } from 'antd';
+import { useRouter } from "next/navigation";
 
 const { Dragger } = Upload
 
 export default function CSVInput() {
   const [messageApi, contextHolder] = message.useMessage()
+  const router = useRouter()
 
   const props: UploadProps = {
     name: 'file',
@@ -33,8 +34,13 @@ export default function CSVInput() {
     },
 
     onChange(info) {
-      const { status } = info.file;
-      if (status !== 'uploading') console.log(info.file, info.fileList);
+      const { status } = info.file; //post 요청에 대한 response가 담겨있음
+      if (status !== 'uploading') {
+        console.log(info.file, info.fileList)
+        console.log(info.file.response)
+        sessionStorage.setItem('analyze-result', JSON.stringify(info.file.response))
+        router.push('/analyze')
+      };
       if (status === 'done') messageApi.success(`${info.file.name} file uploaded successfully.`);
       if (status === 'error') messageApi.error(`${info.file.name} file upload failed.`);
     },
@@ -43,6 +49,7 @@ export default function CSVInput() {
       console.log('Dropped files', e.dataTransfer.files);
     },
   };
+
 
   return (
     <div style={{width: '500px'}}>
