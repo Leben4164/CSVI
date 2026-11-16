@@ -1,0 +1,84 @@
+{
+  "schema_version": "1.1",
+  "status": "success",
+  "file_name": "sample.csv",
+  "summary": {
+    "row_count": 4,
+    "column_count": 3,
+    "duplicate_row_count": 1,
+    "duplicate_row_ratio": 0.25,
+    "issue_count": 3
+  },
+  "columns": [
+    {
+      "index": 0,
+      "name": "name",
+      "data_type": "string",
+      "missing_count": 0,
+      "missing_ratio": 0,
+      "statistics": null
+    },
+    {
+      "index": 1,
+      "name": "age",
+      "data_type": "integer",
+      "missing_count": 1,
+      "missing_ratio": 0.25,
+      "statistics": {
+        "count": 3,
+        "mean": 23.333333333333332,
+        "min": 20,
+        "max": 30
+      }
+    },
+    {
+      "index": 2,
+      "name": "score",
+      "data_type": "integer",
+      "missing_count": 1,
+      "missing_ratio": 0.25,
+      "statistics": {
+        "count": 3,
+        "mean": 83.33333333333333,
+        "min": 80,
+        "max": 90
+      }
+    }
+  ],
+  "issues": [
+    {
+      "type": "missing_value",
+      "severity": "warning",
+      "column_index": 1,
+      "column_name": "age",
+      "count": 1,
+      "row_indices": [
+        1
+      ],
+      "message": "The column contains missing values."
+    },
+    {
+      "type": "missing_value",
+      "severity": "warning",
+      "column_index": 2,
+      "column_name": "score",
+      "count": 1,
+      "row_indices": [
+        3
+      ],
+      "message": "The column contains missing values."
+    },
+    {
+      "type": "duplicate_row",
+      "severity": "warning",
+      "column_index": null,
+      "column_name": null,
+      "count": 1,
+      "row_indices": [
+        2
+      ],
+      "message": "Duplicate rows were found after their first occurrence."
+    }
+  ],
+  "error": null
+}
